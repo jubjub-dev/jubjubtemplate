@@ -8,7 +8,7 @@
   },
   "include": ["vite.config.ts"],
   "references": [
-    { "path": "../react/tsconfig.react.json" },
+    { "path": "../jubjublib/tsconfig.react.json" },
     { "path": "../ui/tsconfig.monorepo.json" }
   ],
 }

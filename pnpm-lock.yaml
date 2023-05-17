@@ -27,7 +27,7 @@ importers:
         version: 0.2.23(typescript@5.0.4)
       jubjublib:
         specifier: workspace:*
-        version: link:../react
+        version: link:../jubjublib
       jubjubui:
         specifier: workspace:*
         version: link:../ui
@@ -84,7 +84,7 @@ importers:
         specifier: ^0.8.2
         version: 0.8.2(vite@4.3.5)
 
-  packages/react:
+  packages/jubjublib:
     devDependencies:
       '@types/node':
         specifier: ^20.1.3

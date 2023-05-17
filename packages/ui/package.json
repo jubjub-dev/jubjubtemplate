@@ -6,6 +6,8 @@
         "dev": "vite",
         "prepack": "json -f package.json -I -e \"delete this.devDependencies; delete this.dependencies\"",
         "build": "tsc && vite build",
+        "watch" : "tsc && vite build --watch",
+        "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
         "preview": "vite preview"
     },
     "dependencies": {

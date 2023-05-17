@@ -6,20 +6,21 @@
   "scripts": {
     "dev": "vite",
     "wagmi": "wagmi generate",
+    "watch":"tsc && vite build --watch",
     "build": "tsc && vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
-    "@rainbow-me/rainbowkit": "^1",
-    "@wagmi/chains": "^0.2.23",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "viem": "^0.3.22",
-    "wagmi": "^1.0.2",
     "jubjublib": "workspace:*",
     "jubjubui": "workspace:*",
-    "styled-components": "^5.3.0"
+    "viem": "^0.3.22",
+    "wagmi": "^1.0.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "styled-components": "^5.3.0",
+    "@wagmi/chains": "^0.2.23",
+    "@rainbow-me/rainbowkit": "^1"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",
