@@ -17,7 +17,9 @@
     "react-dom": "^18.2.0",
     "viem": "^0.3.22",
     "wagmi": "^1.0.2",
-    "jubjublib": "workspace:*"
+    "jubjublib": "workspace:*",
+    "jubjubui": "workspace:*",
+    "styled-components": "^5.3.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",

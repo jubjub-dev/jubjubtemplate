@@ -6,9 +6,5 @@
     "moduleResolution": "bundler",
     "allowSyntheticDefaultImports": true
   },
-  "include": ["vite.config.ts"],
-  "references": [
-    { "path": "../react/tsconfig.react.json" },
-    { "path": "../ui/tsconfig.monorepo.json" }
-  ],
+  "include": ["vite.config.ts"]
 }

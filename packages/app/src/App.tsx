@@ -6,6 +6,8 @@ import { useEffect, useMemo, useState } from 'react';
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 import {random} from "jubjublib"
 
+import { Button } from 'jubjubui';
+
 function App() {
   const memo = useMemo(()=>random(),[])
  const [test, setTest] = useState<string>();
@@ -33,8 +35,13 @@ function App() {
           </a>
         </div>
         <h1>Vite + React</h1>
-        <div className="card">
-          <ConnectButton label='Connect' />;
+        <div className="card1">
+          <ConnectButton label='Connect' />
+          <Button> from UI lib </Button>
+         
+        </div>
+        <div className="card1">
+         
           <p>
             Edit <code>src/App.tsx</code> and save to test HMR
           </p>
