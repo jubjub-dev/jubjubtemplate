@@ -3,8 +3,8 @@ import styled from 'styled-components';
 const Button = styled.button`
     border: none;
     border-radius: 0.5rem;
-    background-color: #000000;
-    color: hsl(0deg, 0%, 98%);
+    background-color: #ffffff;
+    color: #000000;
     padding: 0.75rem;
     cursor: pointer;
     &:hover {

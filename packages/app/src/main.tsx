@@ -8,6 +8,7 @@ import {
   RainbowKitProvider,
   darkTheme,
   connectorsForWallets,
+  lightTheme,
 } from "@rainbow-me/rainbowkit";
 import { injectedWallet } from "@rainbow-me/rainbowkit/wallets";
 import { configureChains, createConfig, WagmiConfig } from "wagmi";
@@ -43,10 +44,10 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
       <RainbowKitProvider
         chains={chains}
         showRecentTransactions={true}
-        theme={darkTheme({
-          accentColor: "#000000",
-          accentColorForeground: "white",
-          borderRadius: "small",
+        theme={lightTheme({
+          accentColor: "#FFFFFF",
+          accentColorForeground: "black",
+          borderRadius: "medium",
           fontStack: "system",
           overlayBlur: "small",
         })}

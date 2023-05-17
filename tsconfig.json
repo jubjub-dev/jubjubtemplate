@@ -110,7 +110,7 @@
   "files": [],
   "include": [],
   "references": [
-    {"path": "./packages/react/"},
+    {"path": "./packages/jubjublib/"},
     {"path": "./packages/ui/"},
     {"path": "./packages/app/"}]
 }
