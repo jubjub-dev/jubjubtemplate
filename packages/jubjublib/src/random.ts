@@ -2,13 +2,9 @@ import crypto from "crypto";
 
 export const random = () => "0x" + crypto.randomBytes(32).toString("hex");
 
-export const SNARK_FIELD_SIZE: bigint = BigInt(
-  "21888242871839275222246405745257275088548364400416034343698204186575808495617"
-);
+export const SNARK_FIELD_SIZE: bigint = 21888242871839275222246405745257275088548364400416034343698204186575808495617n;
 
-export const PRIME_ORDER_SUBGROUP_SIZE: bigint = BigInt(
-  "2736030358979909402780800718157159386076813972158567259200215660948447373041"
-);
+export const PRIME_ORDER_SUBGROUP_SIZE: bigint = 21888242871839275222246405745257275088548364400416034343698204186575808495617n/8n;
 
 export const genRandomBabyJubValue = (): bigint => {
   // Prevent modulo bias
@@ -27,7 +23,7 @@ export const genRandomBabyJubValue = (): bigint => {
     }
   }
 
-  const randomBabyJubValue: bigint = rand % PRIME_ORDER_SUBGROUP_SIZE;
+  const randomBabyJubValue: bigint = rand % SNARK_FIELD_SIZE;
 
   return randomBabyJubValue;
 };
