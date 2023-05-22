@@ -1,8 +1,8 @@
 import { BabyJub, Eddsa, buildBabyjub, buildEddsa } from "circomlibjs";
 import { bigInt2Buffer, buffer2BigInt, buffer2hex } from "./utils";
+import { RawPrivKey } from "./privkey";
 
 type Prettify<T> = { [K in keyof T]: T[K] } & {};
-export type RawPrivKey = bigint;
 export type RawPubKey = bigint[];
 export type SerializedPubKey = string;
 
