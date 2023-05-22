@@ -2,23 +2,22 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import "@rainbow-me/rainbowkit/styles.css";
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { ConnectButton } from "@rainbow-me/rainbowkit";
-import {random} from "jubjublib"
+import {genRandomBabyJubValue} from "jubjublib"
 
 import { Button } from 'jubjubui';
 
 function App() {
-  const memo = useMemo(()=>random(),[])
- const [test, setTest] = useState<string>();
+ const [test, setTest] = useState<bigint>();
   useEffect(()=>{
-    console.log(`memo ${memo}`) ;
-    setTest( memo )
-  },[memo])
+    setTest(genRandomBabyJubValue())
+  },[])
   useEffect(()=>{
     if (test) {
       console.log(`test changed ${test}`);
       console.log(test)
+      
     }
     
   },[test])

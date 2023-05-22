@@ -6,7 +6,6 @@ import "./index.css";
 import {
   getDefaultWallets,
   RainbowKitProvider,
-  darkTheme,
   connectorsForWallets,
   lightTheme,
 } from "@rainbow-me/rainbowkit";

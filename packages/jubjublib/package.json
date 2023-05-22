@@ -1,6 +1,6 @@
 {
   "name": "jubjublib",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -19,5 +19,9 @@
     "tsup": "^6.7.0",
     "typescript": "^5.0.2",
     "vitest": "^0.31.0"
+  },
+  "dependencies": {
+    "circomlibjs": "^0.1.7",
+    "ffjavascript": "^0.2.57"
   }
 }
