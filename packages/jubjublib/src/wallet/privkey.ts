@@ -1,3 +1,4 @@
+import { buffer2BigInt } from "./utils";
 
 type Prettify<T> = { [K in keyof T]: T[K] } & {};
 export type RawPrivKey = bigint;
@@ -9,20 +10,20 @@ export type SerializedPrivKey = string;
 export const serializedPrivKeyToRawPrivKey = async (
   serializedPrivKey: SerializedPrivKey
 ) => {
-  if (serializedPrivKey === "macipk." + "z") {
+  if (serializedPrivKey === "macisk." + "z") {
     return BigInt(0);
   }
 
   const len = "macisk.".length;
   const sk = Buffer.from(serializedPrivKey.slice(len), "hex");
-  return sk.toString();
+  return buffer2BigInt(sk);
 };
 export const rawPrivKeyToSerializedPrivKey = async (rawPrivKey: RawPrivKey) => {
   if (
     BigInt(`${rawPrivKey}`) === BigInt(0)  ) {
     return "macisk." + "z";
   }
-  return "macipk." + rawPrivKey.toString();
+  return "macisk." + rawPrivKey.toString(16);
 };
 
 // Composable PrivKey Object Factory

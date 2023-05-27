@@ -3,6 +3,7 @@ import {
   random,
   genRandomBabyJubValue,
   PRIME_ORDER_SUBGROUP_SIZE,
+  generate_random_number,
 } from "../src";
 import {
   serializedPubKeyToRawPubKey,
@@ -15,6 +16,9 @@ describe("Node crypto shim", () => {
     console.log(key, "randopm");
     expect(typeof key).toBe("string");
   });
+  it("should return random bigint", ()=>{
+    const sk = generate_random_number()
+  })
   it("should return a random jubjub value", async () => {
     const bbjj = genRandomBabyJubValue();
     console.log(("macisk." + bbjj.toString(16)).length);

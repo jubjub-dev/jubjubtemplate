@@ -24,7 +24,7 @@ export const bigInt2Buffer = (i: bigint): Buffer => {
     return Buffer.from(i.toString(16), "hex");
 };
 
-export function buffer2hex(buff:Buffer) {
+export function buffer2hex(buff:Uint8Array) {
     function i2hex(i:any) {
       return ('0' + i.toString(16)).slice(-2);
     }

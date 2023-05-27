@@ -7,7 +7,7 @@ declare module 'circomlibjs' {
     mulPointEscalar: (base: [bigint, bigint], e: bigint) => [bigint, bigint];
     inSubgroup: (P: [bigint, bigint]) => boolean;
     inCurve: (P: [bigint, bigint]) => boolean;
-    packPoint: (P: Buffer[]) => Buffer;
+    packPoint: (P: Buffer[]) => Uint8Array;
     unpackPoint: (buff: Buffer) => [bigint, bigint];
   }
   export interface Eddsa {
